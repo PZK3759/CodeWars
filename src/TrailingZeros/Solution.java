@@ -27,7 +27,7 @@ public class Solution {
             factorial_n/=10;
         }*/
 
-        // simpler solution
+        //simpler solution for the explanation of this formula visit - https://www.purplemath.com/modules/factzero.htm
         int zero=0;
         while(n!= 0){
             zero += (int)Math.floor(n/5);
