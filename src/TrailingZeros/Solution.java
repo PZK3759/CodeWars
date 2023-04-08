@@ -12,6 +12,8 @@ public class Solution {
     }
     public static int zeros(int n){
 
+
+       /* longer solution
         long factorial_n = fact(n);
         int zero=0;
 
@@ -23,6 +25,13 @@ public class Solution {
                 break;
             }
             factorial_n/=10;
+        }*/
+
+        // simpler solution
+        int zero=0;
+        while(n!= 0){
+            zero += (int)Math.floor(n/5);
+            n/=5;
         }
 
         return zero;
